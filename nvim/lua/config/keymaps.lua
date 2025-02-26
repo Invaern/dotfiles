@@ -10,9 +10,12 @@ vim.keymap.set('n', '<Leader>wv', '<cmd>wincmd v<CR>', {desc = 'Split vertical'}
 vim.keymap.set('n', '<Leader>ws', '<cmd>wincmd s<CR>', {desc = 'Split horizontal'})
 vim.keymap.set('n', '<Leader>wd', '<cmd>wincmd c<CR>', {desc = 'Close window'})
 
+-- Buffer operations
+-- Deletes buffer but preserves the window. Works by first switching to the another buffer and then deleting the last one. 
+-- See `:help bd` and `:help ls` to see what `#` flag means.
+vim.keymap.set('n', '<Leader>bd', '<cmd>bp|bd#<CR>', {desc = 'Delete buffer'})
 
-vim.keymap.set('n', '<Leader>t', function() 
-	print('testing!')
-end)
-
+-- Clears highlights on search when pressing <Esc> in normal
+-- See `:help hlsearch`
+vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
