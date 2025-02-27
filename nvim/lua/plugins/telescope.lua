@@ -25,7 +25,7 @@ return {
     keys = {
       {'<leader>sf', ':Telescope find_files<CR>', desc = 'Find files'},
       {'<leader><leader>', ':Telescope find_files<CR>', desc = 'Find files'},
-      {'<leader>/', ':Telescope live_grep<CR>', desc = 'Find files'},
+      {'<leader>/', ':Telescope live_grep<CR>', desc = 'Live grep'},
       {'<leader>sg', ':Telescope live_grep<CR>', desc = 'Grep files'},
       {'<leader>sb', ':Telescope buffers<CR>', desc = 'List buffers'},
       {'<leader>bb', ':Telescope buffers<CR>', desc = 'List buffers'}
