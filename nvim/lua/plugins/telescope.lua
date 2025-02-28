@@ -30,6 +30,7 @@ return {
 		{ "<leader>sb", ":Telescope buffers<CR>", desc = "List buffers" },
 		{ "<leader>bb", ":Telescope buffers<CR>", desc = "List buffers" },
 		{ "<leader>gg", ":Telescope git_status<CR>", { desc = "Git status" } },
+		{ "<leader>tt", ":Telescope colorscheme<CR>", { desc = "Theme" } },
 	},
 	opts = {
 		defaults = {
