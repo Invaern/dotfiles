@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 -- Options go here
 
 -- display line numbers

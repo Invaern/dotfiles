@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 -- Set leader to <Space>
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

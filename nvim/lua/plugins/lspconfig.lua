@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 return {
 	{
 		"neovim/nvim-lspconfig",
@@ -31,8 +33,11 @@ return {
 					map("<leader>ca", vim.lsp.buf.code_action, "Code Action", { "n", "x" })
 
 					-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
+					---@diagnostic disable-next-line: undefined-doc-name
 					---@param client vim.lsp.Client
+					---@diagnostic disable-next-line: undefined-doc-name
 					---@param method vim.lsp.protocol.Method
+					---@diagnostic disable-next-line: undefined-doc-name
 					---@param bufnr? integer some lsp support methods only in specific files
 					---@return boolean
 					local function client_supports_method(client, method, bufnr)
@@ -40,6 +45,7 @@ return {
 							---@diagnostic disable-next-line: undefined-field
 							return client:supports_method(method, bufnr)
 						else
+							---@diagnostic disable-next-line: undefined-field
 							return client.supports_method(method, { bufnr = bufnr })
 						end
 					end
@@ -146,7 +152,7 @@ return {
 			-- })
 
 			require("mason-lspconfig").setup({
-				ensure_installed = ensure_installed, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+				ensure_installed = ensure_installed,
 				automatic_installation = false,
 				handlers = {
 					function(server_name)

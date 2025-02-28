@@ -1,3 +1,5 @@
+-- luacheck: globals vim
+
 -- In normal mode we don't want <Space> to keep advancing cursor so map space to noop
 vim.keymap.set("n", "<Space>", "<nop>", { noremap = true })
 
@@ -14,7 +16,8 @@ vim.keymap.set("n", "<Leader>wd", "<cmd>wincmd c<CR>", { desc = "Close window" }
 vim.keymap.set("n", "<Leader>oq", "<cmd>copen<CR>", { desc = "Quickfix" })
 
 -- Buffer operations
--- Deletes buffer but preserves the window. Works by first switching to the another buffer and then deleting the last one.
+-- Deletes buffer but preserves the window.
+-- Works by first switching to the another buffer and then deleting the last one.
 -- See `:help bd` and `:help ls` to see what `#` flag means.
 vim.keymap.set("n", "<Leader>bd", "<cmd>bp|bd#<CR>", { desc = "Delete buffer" })
 
