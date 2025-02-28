@@ -1,6 +1,6 @@
 -- In normal mode we don't want <Space> to keep advancing cursor so map space to noop
 vim.keymap.set('n', '<Space>', '<nop>', {noremap = true})
-	
+
 -- window related mappings
 vim.keymap.set('n', '<Leader>wj', '<cmd>wincmd j<CR>', {desc = 'Window below'})
 vim.keymap.set('n', '<Leader>wk', '<cmd>wincmd k<CR>', {desc = 'Window above'})

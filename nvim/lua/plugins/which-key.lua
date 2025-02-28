@@ -5,7 +5,7 @@ return {
    opts = {
      preset = 'helix'
    },
-   keys = function() 
+   keys = function()
      local wk = require('which-key')
      wk.add({
        -- groups
@@ -14,6 +14,7 @@ return {
        {'<leader>o', group = 'open', icon = ''},
        {'<leader>w', group = 'windows'},
        {'<leader>g', group = 'git'},
+       {'<leader>c', group = 'code'},
        -- set/override icons for existing mappings
        {'<leader>op', icon = ''},
        {'<leader>wd', icon = ''},

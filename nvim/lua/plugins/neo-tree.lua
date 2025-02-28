@@ -14,12 +14,12 @@ return {
     { '<leader>op', ':Neotree reveal toggle<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
---    filesystem = {
---      window = {
---        mappings = {
---          ['\\'] = 'close_window',
---        },
---      },
---    },
+    --    filesystem = {
+    --      window = {
+    --        mappings = {
+    --          ['\\'] = 'close_window',
+    --        },
+    --      },
+    --    },
   },
 }
