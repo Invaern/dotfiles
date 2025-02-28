@@ -14,6 +14,7 @@ vim.keymap.set("n", "<Leader>wd", "<cmd>wincmd c<CR>", { desc = "Close window" }
 
 -- open stuff
 vim.keymap.set("n", "<Leader>oq", "<cmd>copen<CR>", { desc = "Quickfix" })
+vim.keymap.set("n", "<Leader>od", vim.diagnostic.open_float, { desc = "Diagnostic float" })
 
 -- Buffer operations
 -- Deletes buffer but preserves the window.
