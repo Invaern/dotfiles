@@ -17,4 +17,3 @@ vim.opt.tabstop = 2
 -- numver of spaces for each indent
 vim.opt.shiftwidth = 2
 vim.cmd.colorscheme("tokyonight")
-
