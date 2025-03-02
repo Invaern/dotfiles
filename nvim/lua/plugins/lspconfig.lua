@@ -132,6 +132,9 @@ return {
 					},
 				},
 				texlab = {},
+				elixirls = {
+					cmd = { vim.fn.stdpath("data") .. "/mason/bin/elixir-ls" },
+				},
 			}
 			-- Ensure the servers and tools above are installed
 			--
