@@ -13,5 +13,11 @@ return {
 	keys = {
 		{ "<leader>op", ":Neotree reveal toggle<CR>", desc = "NeoTree reveal", silent = true },
 	},
-	opts = {},
+	opts = {
+		window = {
+			mappings = {
+				["<tab>"] = "toggle_node",
+			},
+		},
+	},
 }
