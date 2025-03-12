@@ -28,6 +28,13 @@ return {
 		{ "<leader>sf", ":Telescope find_files<CR>", desc = "Find files" },
 		{ "<leader><leader>", ":Telescope find_files<CR>", desc = "Find files" },
 		{ "<leader>/", ":Telescope live_grep<CR>", desc = "Live grep" },
+		{
+			"<leader>/",
+			'"zy:Telescope live_grep default_text=<C-r>z<CR>',
+			desc = "Live grep selection",
+			mode = "v",
+			remap = false,
+		},
 		{ "<leader>sg", ":Telescope live_grep<CR>", desc = "Grep files" },
 		{ "<leader>sb", ":Telescope buffers<CR>", desc = "List buffers" },
 		{ "<leader>bb", ":Telescope buffers<CR>", desc = "List buffers" },

@@ -15,6 +15,9 @@ return {
 			{ "<leader>w", group = "windows" },
 			{ "<leader>g", group = "git" },
 			{ "<leader>c", group = "code" },
+			{ "<leader>t", group = "toggle" },
+			{ "<leader>m", group = "localleader" },
+			{ "<leader>mt", group = "test" },
 			-- set/override icons for existing mappings
 			{ "<leader>op", icon = "" },
 			{ "<leader>wd", icon = "" },

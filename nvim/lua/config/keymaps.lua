@@ -21,7 +21,11 @@ vim.keymap.set("n", "<Leader>od", vim.diagnostic.open_float, { desc = "Diagnosti
 -- Works by first switching to the another buffer and then deleting the last one.
 -- See `:help bd` and `:help ls` to see what `#` flag means.
 vim.keymap.set("n", "<Leader>bd", "<cmd>bp|bd#<CR>", { desc = "Delete buffer" })
+vim.keymap.set("n", "<Leader>bD", "<cmd>bp|bd!#<CR>", { desc = "Delete buffer (force)" })
 
 -- Clears highlights on search when pressing <Esc> in normal
 -- See `:help hlsearch`
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- More intuitive way of exitting terminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { desc = "Back to normal mode in terminal", noremap = true })
