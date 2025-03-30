@@ -8,6 +8,7 @@ return {
 		lint.linters_by_ft = {
 			lua = { "luacheck" },
 			sh = { "shellcheck" },
+			elixir = { "credo" },
 		}
 		-- Create autocommand which carries out the actual linting
 		-- on the specified events.
