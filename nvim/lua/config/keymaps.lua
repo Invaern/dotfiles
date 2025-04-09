@@ -23,6 +23,12 @@ vim.keymap.set("n", "<Leader>od", vim.diagnostic.open_float, { desc = "Diagnosti
 vim.keymap.set("n", "<Leader>bd", "<cmd>bp|bd#<CR>", { desc = "Delete buffer" })
 vim.keymap.set("n", "<Leader>bD", "<cmd>bp|bd!#<CR>", { desc = "Delete buffer (force)" })
 
+-- Tab related stuff
+vim.keymap.set("n", "<Leader><TAB>n", "<cmd>tabnew<CR>", { desc = "New tab" })
+vim.keymap.set("n", "<Leader><TAB>d", "<cmd>tabclose<CR>", { desc = "Close tab" })
+vim.keymap.set("n", "<Leader><TAB>]", "<cmd>tabnext<CR>", { desc = "Next tab" })
+vim.keymap.set("n", "<Leader><TAB>[", "<cmd>tabprevious<CR>", { desc = "Previous tab" })
+
 -- Clears highlights on search when pressing <Esc> in normal
 -- See `:help hlsearch`
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
