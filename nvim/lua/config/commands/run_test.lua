@@ -1,5 +1,11 @@
 -- luacheck: globals vim
 --
+-- Opens a new tab with single terminal buffer in which the given command is run.
+-- Subsequent runs of the command kill the created tab & buffer (if one still exists),
+-- so you don't end up with multiple test result buffers.
+--
+-- Example use:
+-- vim.keymap.set("n", "<Leader>mta", "<cmd>RunTest mix test<CR>", { desc = "Test all", buffer = true })
 
 local TEST_RESULTS_VAR = "test_results"
 
