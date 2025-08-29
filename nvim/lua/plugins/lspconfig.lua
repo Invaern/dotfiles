@@ -104,6 +104,9 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls", "texlab", "elixirls" },
 			})
+
+			-- rust-analyzer comes from rustup and not Mason, as such we need to enable it manually
+			vim.lsp.enable("rust_analyzer")
 		end,
 	},
 }
