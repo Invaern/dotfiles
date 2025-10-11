@@ -9,3 +9,4 @@ end, { desc = "Test under cursor", buffer = true })
 
 vim.keymap.set("n", "<Leader>mtv", "<cmd>RunTest mix test %<CR>", { desc = "Test file", buffer = true })
 vim.keymap.set("n", "<Leader>mta", "<cmd>RunTest mix test<CR>", { desc = "Test all", buffer = true })
+vim.keymap.set("n", "<Leader>mtr", "<cmd>RunLastTest<CR>", { desc = "Repeat last test", buffer = true })

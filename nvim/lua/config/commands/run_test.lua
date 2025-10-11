@@ -9,6 +9,8 @@
 
 local TEST_RESULTS_VAR = "test_results"
 
+local last_cmd = nil
+
 local function find_test_tab()
 	local tabpages = vim.api.nvim_list_tabpages()
 
@@ -57,8 +59,17 @@ local function switch_to_test_tab()
 	create_test_tab()
 end
 
+vim.api.nvim_create_user_command("RunLastTest", function()
+	if last_cmd then
+		vim.cmd("RunTest " .. last_cmd)
+	else
+		vim.print("No test command to repeat")
+	end
+end, { nargs = 0 })
+
 vim.api.nvim_create_user_command("RunTest", function(opts)
 	switch_to_test_tab()
+	last_cmd = opts.fargs[1]
 	vim.cmd("term " .. opts.fargs[1])
 	vim.b[TEST_RESULTS_VAR] = true
 end, { nargs = 1 })
