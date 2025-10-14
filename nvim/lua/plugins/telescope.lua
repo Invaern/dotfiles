@@ -28,6 +28,7 @@ return {
 		{ "<leader>sf", ":Telescope find_files<CR>", desc = "Find files" },
 		{ "<leader><leader>", ":Telescope find_files<CR>", desc = "Find files" },
 		{ "<leader>/", ":Telescope live_grep<CR>", desc = "Live grep" },
+		{ "<leader>.", ":Telescope resume<CR>", desc = "Resume last search" },
 		{
 			"<leader>/",
 			'"zy:Telescope live_grep default_text=<C-r>z<CR>',
