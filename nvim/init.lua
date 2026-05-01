@@ -9,4 +9,4 @@ require("config.keymaps")
 require("config.opts")
 require("config.commands")
 
-vim.cmd.colorscheme("tokyonight-night")
+vim.cmd.colorscheme("NeoSolarized")
